@@ -1,0 +1,5 @@
+Descripción breve del proyecto: "Este repositorio contiene el código fuente para un sistema de gestión de juntas de dinero. Permite a los usuarios iniciar y gestionar juntas de dinero entre un grupo de personas, asignando ganadores aleatorios cada mes."
+Propósito del proyecto: "Exploramos cómo crear una aplicación para organizar juntas de dinero de manera eficiente, permitiendo que los usuarios establezcan reglas y realicen sorteos mensuales entre los participantes."
+Funcionalidades clave: "Nuestra aplicación permite a los usuarios especificar el número de participantes y el monto de sus aportes mensuales. Luego, organiza sorteos mensuales para seleccionar ganadores aleatorios, asegurando una distribución justa de los fondos."
+Tecnologías utilizadas: "Desarrollado con Flask para el backend y HTML/CSS para el frontend. Utiliza Python para la lógica del negocio y SQLite para la persistencia de datos."
+Objetivo del repositorio: "Este repositorio sirve como punto de partida para aquellos interesados en explorar cómo desarrollar aplicaciones web con Flask y Python, específicamente enfocadas en la gestión de juntas de dinero."
