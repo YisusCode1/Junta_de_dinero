@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end; /* Alinea el botón "Wallet" en el extremo derecho */
+  padding: 10px;
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+  top: 0; /* Asegura que el encabezado esté en la parte superior */
+}
+
+main {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+#crear-junta-btn {
+  margin-top: 20px;
+}
+
+/* Estilos para el botón "Wallet" */
+header a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+header a:hover {
+  background-color: #0056b3;
+}
+
+.crear-junta-btn,
+.unirse-junta-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.crear-junta-btn:hover,
+.unirse-junta-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+

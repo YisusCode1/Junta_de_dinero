@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Junta</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Crear una Junta</h1>
+      <form action="#" method="POST" id="crear-junta-form">
+        <label for="participantes">Número de Participantes:</label>
+        <input
+          type="number"
+          id="participantes"
+          name="participantes"
+          min="3"
+          max="20"
+          required
+        /><br />
+        <label for="monto">Monto a Aportar cada Mes:</label>
+        <input
+          type="number"
+          id="monto"
+          name="monto"
+          min="50"
+          max="500"
+          required
+        /><br />
+        <div id="direcciones-billetera"></div>
+        <div id="monto-a-sortear"></div>
+        <!-- Aquí se mostrará el monto a sortear -->
+        <div id="crear-junta-btn" style="display: none">
+          <!-- Cambiado a un enlace que redirige a resultados.html con el número de participantes como parámetro de URL -->
+          <a href="javascript:void(0)" id="crear-junta-link">Crear Junta</a>
+        </div>
+      </form>
+    </main>
+    <script src="{{ url_for('static', filename='crear_junta.js') }}"></script>
+  </body>
+</html>
