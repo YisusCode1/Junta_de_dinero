@@ -5,31 +5,70 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {
   display: flex;
-  justify-content: flex-end; /* Alinea el botón "Wallet" en el extremo derecho */
+  justify-content: flex-end;
   padding: 10px;
   background-color: #f0f0f0;
   width: 100%;
-  position: fixed; /* Fija el encabezado en la parte superior de la ventana */
-  top: 0; /* Asegura que el encabezado esté en la parte superior */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 main {
   text-align: center;
+  margin-top: 60px; /* Ajusta el margen superior para evitar superposición con el header */
 }
 
 form {
   margin-top: 20px;
 }
 
-#crear-junta-btn {
-  margin-top: 20px;
+form label {
+  display: block;
+  margin: 10px 0 5px;
 }
 
-/* Estilos para el botón "Wallet" */
+form input[type="text"], form input[type="number"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 300px; /* Ajusta el ancho del input */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho del input */
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+#crear-junta-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#crear-junta-btn:hover {
+  background-color: #218838;
+}
+
 header a {
   padding: 10px 20px;
   background-color: #007bff;
@@ -43,23 +82,64 @@ header a:hover {
   background-color: #0056b3;
 }
 
-.crear-junta-btn,
-.unirse-junta-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
+.aporte-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
   color: white;
-  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.aporte-btn:hover {
+  background-color: #218838;
+}
+
+.validar-datos-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.validar-datos-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Estilos específicos para los botones en index.html */
+.crear-junta-btn, .unirse-junta-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.crear-junta-btn:hover, .unirse-junta-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la página resultados.html */
+#ganadores-lista {
+  list-style-type: none;
+  padding: 0;
   margin-top: 20px;
 }
 
-.crear-junta-btn:hover,
-.unirse-junta-btn:hover {
-  background-color: #0056b3;
+#ganadores-lista li {
+  background-color: #f8f9fa;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 

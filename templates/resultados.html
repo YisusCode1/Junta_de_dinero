@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resultados</title>
-    <!-- Vincular el archivo CSS común -->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
   <body>
-    <!-- Contenido de la página resultados.html -->
-    <h1>Resultados del Sorteo</h1>
-    <div id="ganadores"></div>
-    <!-- Aquí se mostrarán los ganadores -->
-    <!-- Vincular el archivo JavaScript específico para esta página -->
-    <script src="{{ url_for('static', filename='resultados.js') }}"></script>
+    <header>
+      <a href="#" id="wallet-btn">Wallet</a>
+    </header>
+    <main>
+      <h1>Ganadores del Sorteo</h1>
+      <p>A continuación se muestran los ganadores:</p>
+      <ul>
+        {% for ganador in ganadores %}
+        <li>{{ ganador }}</li>
+        {% endfor %}
+      </ul>
+    </main>
   </body>
 </html>
